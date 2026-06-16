@@ -3,7 +3,7 @@
   become: yes
   
   tasks: 
-    - name: Copy WAR filr to Tomcat
+    - name: Copy WAR file to Tomcat
       copy:
       	src: "/var/snap/jenkins/5042/workspace/AnsibleFinal/target/MyMavenAnsible.war"
       	dest: "/opt/tomcat/webapps/MyMavenAnsible.war"
